@@ -10,48 +10,54 @@
 <body>
   <div class="container">
     <h1>Who are you compatible with?</h1>
-    <form id="starSign">
-      <h1>What is your sign?</h1>
-      <div class="radio">
-        <label>
-          <input type="radio" name="sign" value="fireSign" checked>
-          Aries, Leo, or Sagittarius
-        </label>
+    <form id="answer">
+      <div id="starSign">
+        <h1>What is your sign?</h1>
+        <div class="radio">
+          <label>
+            <input type="radio" name="sign" value="1" checked >
+            Aries, Leo, or Sagittarius
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="sign" value="2">
+            Aquarius, Gemini, or Libra
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="sign" value="3">
+            Capricorn, Taurus, or Virgo
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="sign" value="4">
+            Cancer, Pisces, or Scorpio
+          </label>
+        </div>
       </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="sign" value="airSign">
-          Aquarius, Gemini, or Libra
-        </label>
+      <div id="color">
+        <h1>What is your favorite color</h1>
+        <select class="form-control" id="faveColor">
+          <option value="1">Pink</option>
+          <option value="2">Blue</option>
+          <option value="3">Orange</option>
+          <option value="4">Green</option>
+        </select>
       </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="sign" value="earthSign">
-          Capricorn, Taurus, or Virgo
-        </label>
+      <div id="age">
+        <h1>What is your age?</h1>
+        <select class="form-control" id="ageInput">
+          <option value="1">0-20</option>
+          <option value="2">21-40</option>
+          <option value="3">41-60</option>
+          <option value="4">61 and up</option>
+        </select>
       </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="sign" value="waterSign">
-          Cancer, Pisces, or Scorpio
-        </label>
-      </div>
+      <button type="submit" class="btn">Go!</button>
     </form>
-    <form id="color">
-      <h1>What is your favorite color</h1>
-      <select class="form-control" id="faveColor">
-        <option value="pink">Pink</option>
-        <option value="blue">Blue</option>
-        <option value="orange">Orange</option>
-        <option value="Green">Green</option>
-      </select>
-    </form>
-    <form id="age">
-      <h1>What is your age?</h1>
-      <label for="ageInput">Enter your age</label>
-      <input type="text" id="ageInput">
-    </form>
-    <button type="submit" class="btn">Go!</button>
     <div id="elon1">
       <h2>You got Elon!</h2>
       <img src="img/elon1.jpeg" alt="elon musk">
